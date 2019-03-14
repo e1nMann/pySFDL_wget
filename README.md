@@ -1,5 +1,5 @@
 # pySFDL_wget
-download SFDLs with python and Curl
+download SFDLs with python and Wget
 
 # Usage
 simpel download
@@ -15,5 +15,5 @@ find -iname '*.sfdl' -type f -print0 |xargs -0i -P4 python "{}" password123
 have fun!
 
 # Info
-author: e1nMann
-date: 14.03.2019
+* author: e1nMann
+* date: 14.03.2019
