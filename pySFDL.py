@@ -404,8 +404,8 @@ try:
             #~ h.close()
         print "=================[FTP CONNECTION DETAILS]================"
         subprocess.check_output('wget -nH -nd -r -c -P "{directory}" "{url}"'.format(directory=titel, url=ftp_url), shell=True)
-        print 'Das war es dann auch schon... danke sync für das decoding muhahahar...'
-        
+        subprocess.check_output('mv "{sfdl}" "{directory}"'.format(sfdl=sys.argv[1],directory=titel), shell=True)
+        print 'Das war es dann auch schon...'
         #~ print "=================[FTP CONNECTION DETAILS]================"
         #~ ftp = FTP()
         #~ print 'Build Connection.'
