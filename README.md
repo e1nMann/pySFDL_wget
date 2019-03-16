@@ -27,6 +27,18 @@ rm master.tar.gz
 cd pySFDL_wget-master
 python2 pySFDL_wget.py
 ```
+to download with an socks5 proxy, you need proxychains
+```sh
+pkg install tor
+tor > log &
+pkg install proxychains-ng
+```
+then edit the `$HOME/../usr/etc/proxychains.fong` at the end of file replace tor socks4 to socks5
+now you can start pySFDL with it:
+```sh
+proxychains4 python2 pySFDL.py <filename.sfdl> <password>
+```
+
 
 have fun!
 
